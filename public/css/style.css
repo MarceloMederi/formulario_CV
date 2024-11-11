@@ -1,0 +1,145 @@
+/* Resetando alguns estilos padrões */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #eef2f5;
+  display: flex;  /* Usando flexbox para alinhar o conteúdo */
+  flex-direction: column;  /* Organiza os elementos na vertical */
+  justify-content: flex-start;  /* Alinha ao topo da tela */
+  align-items: center;  /* Centraliza o conteúdo horizontalmente */
+  padding: 20px;
+  color: #333;
+  overflow-y: auto; /* Permite rolagem se o conteúdo ultrapassar a altura da tela */
+}
+
+/* Título */
+h1 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Estilo do formulário */
+form {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 700px;
+  margin-top: 20px;  /* Espaço acima do formulário */
+}
+
+/* Estilo dos campos de input e textarea */
+label {
+  font-size: 1.1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #2c3e50;
+  margin-bottom: 5px;
+  display: block;
+}
+
+/* Estilo dos inputs de texto, select e textarea */
+input[type="text"], select, textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  background-color: #f9f9f9;
+}
+
+/* Estilo dos inputs radio */
+input[type="radio"] {
+  margin-bottom: 30px;
+}
+
+/* Ajustando a altura da área de texto */
+textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+/* Estilo do botão de envio */
+button {
+  width: 100%;
+  padding: 14px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+/* Estilo para as opções de "sim" e "não" (radios) */
+input[type="radio"] + label {
+  margin-right: 25px;
+}
+
+/* Estilo para o select */
+select {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 12px;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  h1 {
+      font-size: 2rem;
+  }
+
+  form {
+      padding: 25px;
+      width: 100%;
+  }
+
+  input[type="text"], input[type="radio"], select, textarea {
+      font-size: 1rem;
+  }
+
+  button {
+      font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+      font-size: 1.8rem;
+  }
+
+  form {
+      padding: 20px;
+  }
+
+  label {
+      font-size: 0.9rem;
+  }
+
+  input[type="text"], input[type="radio"], select, textarea {
+      font-size: 0.9rem;
+  }
+
+  button {
+      font-size: 1rem;
+  }
+}

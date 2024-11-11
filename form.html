@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulário de Recrutamento</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <h1>Formulário de Recrutamento</h1>
+  <form id="recruitmentForm" method="post" action="/submit">
+    <!-- 1 -->
+    <label for="name">Como gostaria de ser chamado?</label>
+    <input type="text" name="Nome" id="name" required><br>
+
+    <!-- 2 -->
+    <label for="fullName">Seu nome completo?</label>
+    <input type="text" name="Nome-Completo" id="fullName" required><br>
+
+    <!-- 3 -->
+    <label>Você faz parte do grupo afirmativo de Pessoas com Deficiência?</label>
+    <input type="radio" name="Deficiencia" value="Sim" required> Sim
+    <input type="radio" name="Deficiencia" value="Não" required> Não<br>
+
+    <!-- 4 -->
+    <label>Qual sua escolaridade?</label>
+    <select name="Educacao" required>
+      <option value="Ensino Fundamental">Ensino Fundamental</option>
+      <option value="Ensino Médio">Ensino Médio</option>
+      <option value="Ensino Superior">Ensino Superior</option>
+      <option value="Pós">Pós</option>
+      <option value="Mestrado">Mestrado</option>
+      <option value="Doutorado">Doutorado</option>
+    </select><br>
+
+    <!-- 5 -->
+    <label>Qual o status da sua escolaridade?</label>
+    <select name="Educacao-Status" required>
+      <option value="Cursando">Cursando</option>
+      <option value="Completo">Completo</option>
+      <option value="Interrompido">Interrompido</option>
+    </select><br>
+
+    <!-- 5 -->
+    <label>Possui CNH Categoria B?</label>
+    <input type="radio" name="CNH_B" value="Sim" required> Sim
+    <input type="radio" name="CNH_B" value="Não" required> Não<br>
+
+    <!-- 6 -->
+    <label>Possui disponibilidade de viagens?</label>
+    <input type="radio" name="Disponibilidade-Viagem" value="Sim" required> Sim
+    <input type="radio" name="Disponibilidade-Viagem" value="Não" required> Não<br>
+
+    <!-- 7 -->
+    <label>Possui disponibilidade para mudança de cidade?</label>
+    <input type="radio" name="Mudanca-Cidade" value="Sim" required> Sim
+    <input type="radio" name="Mudanca-Cidade" value="Não" required> Não<br>
+
+    <!-- 8 -->
+    <label>Está trabalhando atualmente?</label>
+    <input type="radio" name="Empregado-Atualmente" value="Sim" required> Sim
+    <input type="radio" name="Empregado-Atualmente" value="Não" required> Não<br>
+
+    <!-- 10 -->
+    <label for="startExpectation">Qual sua expectativa de início na Algar Telecom, caso seja aprovado?</label>
+    <input type="text" name="Expectativa-Algar" id="startExpectation"><br>
+
+    <!-- 11 -->
+    <label>Tem experiência prática na área correspondente à vaga?</label>
+    <input type="radio" name="Experiencia-Vaga" value="Sim" required> Sim
+    <input type="radio" name="Experiencia-Vaga" value="Não" required> Não<br>
+
+    <!-- 12 -->
+    <label for="experienceDuration">Atua há quanto tempo nesta área?</label>
+    <input type="text" name="Tempo-Experiencia" id="experienceDuration"><br>
+
+    <!-- 13 -->
+    <label for="salaryExpectation">Qual sua pretensão salarial?</label>
+    <input type="text" name="Pretensao-Salarial" id="salaryExpectation" pattern="^[1-9][0-9]*$" required><br>
+    
+    <!-- 14 -->
+    <label>Qual a sua disponibilidade de horário?</label>
+    <select name="Disponibilidade-Horario" required>
+      <option value="Manhã/Tarde">Manhã/Tarde</option>
+      <option value="Tarde/Noite">Tarde/Noite</option>
+      <option value="Noite/Madrugada">Noite/Madrugada</option>
+      <option value="Total">Total</option>
+    </select><br>
+
+    <!-- 15 -->
+    <label>Já trabalhou no Grupo Algar e/ou trabalhou em alguma empresa terceira?</label>
+    <input type="radio" name="Trabalhou-na-Algar" value="Sim" required> Sim
+    <input type="radio" name="Trabalhou-na-Algar" value="Não" required> Não<br>
+
+    <!-- 16 -->
+    <label for="previousExperience">Caso tenha trabalhado no Grupo Algar ou Terceiro, informe a empresa/ cargo/ último gestor/ último salário/ motivo da saída.</label><br>
+    <textarea name="Experiencia-Previa" id="previousExperience" placeholder="Caso não tenha Trabalhado deixe em branco"></textarea><br>
+
+    <!-- 17 -->
+    <label>Qual o seu nível de proficiência na língua inglesa?</label>
+    <select name="Ingles-Proficiencia" required>
+      <option value="Básico">Básico</option>
+      <option value="Intermediário">Intermediário</option>
+      <option value="Avançado">Avançado</option>
+      <option value="Fluente">Fluente</option>
+    </select><br>
+
+    <!-- 18 -->
+    <label for="certifications">Possui alguma certificação técnica ou específica na sua área de atuação?</label>
+    <textarea name="Certificacoes" id="certifications"></textarea><br>
+
+    <!-- 19 -->
+    <label for="motivation">Qual o motivador para buscar outras oportunidades?</label>
+    <textarea name="Motivacao-Oportunidades" id="motivation"></textarea><br>
+
+    <!-- 20 -->
+    <label for="relevantExperience">Comente em poucas palavras sobre experiência mais relevante para esta posição e como ela se relaciona com o que estamos buscando.</label>
+    <textarea name="Experiencia-Relevante" id="relevantExperience"></textarea><br>
+
+    <button type="submit">Enviar</button>
+  </form>
+</body>
+</html>
